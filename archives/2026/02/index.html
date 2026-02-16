@@ -1,6 +1,6 @@
   <!DOCTYPE html>
   <html lang="zh-CN"  
-      data-theme-mode="auto"
+      data-theme-mode="false"
   >
   <head>
   <meta charset="utf-8">
@@ -128,7 +128,7 @@
 <header id="header" aria-label="Site header">
       <picture>
       </picture>
-        <img  fetchpriority="high" src="/VeridianByte/images/banner.webp" alt="">
+        <img crossorigin="anonymous" fetchpriority="high" src="/VeridianByte/images/banner.webp" alt="">
   <div id="header-outer">
     <div id="header-title">
           <span id="logo">
@@ -166,9 +166,6 @@
   </div>
 </div>
 <div class="sidebar-social" >
-    <div class="icon-email sidebar-social-icon">
-      <a href=picaun1216@gmail.com itemprop="url" target="_blank" aria-label="email" rel="noopener nofollow noreferrer"></a>
-    </div>
     <div class="icon-github sidebar-social-icon">
       <a href=https://github.com/VeridianByte itemprop="url" target="_blank" aria-label="github" rel="noopener nofollow noreferrer"></a>
     </div>
@@ -307,9 +304,6 @@
   </div>
 </div>
 <div class="sidebar-social" >
-    <div class="icon-email sidebar-social-icon">
-      <a href=picaun1216@gmail.com itemprop="url" target="_blank" aria-label="email" rel="noopener nofollow noreferrer"></a>
-    </div>
     <div class="icon-github sidebar-social-icon">
       <a href=https://github.com/VeridianByte itemprop="url" target="_blank" aria-label="github" rel="noopener nofollow noreferrer"></a>
     </div>
@@ -380,6 +374,9 @@
 <script src="https://npm.webcache.cn/clipboard@2.0.11/dist/clipboard.min.js" integrity="sha384-J08i8An&#x2F;QeARD9ExYpvphB8BsyOj3Gh2TSh1aLINKO3L0cMSH2dN3E22zFoXEi0Q" crossorigin="anonymous"></script>
 
 
+  
+<script src="https://npm.webcache.cn/material-theme@1.0.0/dist/material-theme.umd.js" integrity="sha384-vLev0II0HKFaxkcm+&#x2F;7kX5IGwVFBASkGchU311wmU&#x2F;veIj2bB0UcBkQbW6yw2asK" crossorigin="anonymous"></script>
+
 
 
 <script src="/VeridianByte/js/script.js"></script>
@@ -439,7 +436,7 @@
 
   <script>
     var setupFirework = () => {
-      if (!false || !window.matchMedia('(max-width: 768px)').matches) {
+      if (!true || !window.matchMedia('(max-width: 768px)').matches) {
         window.firework && window.firework(JSON.parse('{"excludeElements":["a","button"],"particles":[{"shape":"circle","move":["emit"],"easing":"easeOutExpo","colors":["var(--red-1)","var(--red-2)","var(--red-3)","var(--red-4)"],"number":20,"duration":[1200,1800],"shapeOptions":{"radius":[16,32],"alpha":[0.3,0.5]}},{"shape":"circle","move":["diffuse"],"easing":"easeOutExpo","colors":["var(--red-0)"],"number":1,"duration":[1200,1800],"shapeOptions":{"radius":20,"alpha":[0.2,0.5],"lineWidth":6}}]}'));
       }
     }
@@ -448,6 +445,14 @@
 <script src="https://npm.webcache.cn/mouse-firework@0.2.0/dist/index.umd.js" integrity="sha384-qi9WggRt19tv8Vc7pCHW3ulMNLwrn515zaLEWZjl1px07vz8+pUoWX8n1rgq282T" crossorigin="anonymous" onload="setupFirework()" defer></script>
 
 
+
+  <script>
+    var setupLive2d = () => {
+      live2d.init("https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/", {themeTipsPath: ""});
+    }
+  </script>
+  
+<script src="https://fastly.jsdelivr.net/gh/D-Sketon/plugin-live2d/js/live2d-autoload.js" onload="setupLive2d()" async></script>
 
 
 
