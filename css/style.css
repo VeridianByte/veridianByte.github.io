@@ -47,8 +47,8 @@
   --cursor-pointer: url("../images/cursor/reimu-cursor-pointer.png"), pointer;
   --cursor-text: url("../images/cursor/reimu-cursor-text.png"), text;
   --footer-icon: url("../images/taichi.png");
-  --sponsor-icon: url("../images/taichi.png");
-  --top-icon: url("../images/taichi.png");
+  --sponsor-icon: url("../images/gua.png");
+  --top-icon: url("../images/asuka.png");
   --shadow-meta: 0 0 5px 2px var(--color-meta-shadow);
   --shadow-meta-hover: 0 0 6px 4px var(--color-meta-shadow);
   --shadow-card: 0 0 10px 2px var(--color-hover-shadow);
@@ -2589,22 +2589,8 @@ pre .emphasis {
     opacity: 1;
   }
 }
-@supports (-webkit-mask: var(--top-icon) no-repeat center/100%) {
-  .sidebar-top-taichi {
-    background-color: var(--red-1);
-    -webkit-mask: var(--top-icon) no-repeat center/100%;
-  }
-}
-@supports (mask: var(--top-icon) no-repeat center/100%) {
-  .sidebar-top-taichi {
-    background-color: var(--red-1);
-    mask: var(--top-icon) no-repeat center/100%;
-  }
-}
-@supports not ((mask: var(--top-icon) no-repeat center/100%) and (-webkit-mask: var(--top-icon) no-repeat center/100%)) {
-  .sidebar-top-taichi {
-    background: var(--top-icon) no-repeat center/100%;
-  }
+.sidebar-top-taichi {
+  background: var(--top-icon) no-repeat center/100%;
 }
 .sponsor-wrapper {
   display: flex;
@@ -2634,22 +2620,8 @@ pre .emphasis {
 .sponsor-icon.rotate {
   animation: rotate-all 3s linear infinite;
 }
-@supports (-webkit-mask: var(--sponsor-icon) no-repeat center/80%) {
-  .sponsor-icon {
-    background-color: var(--red-1);
-    -webkit-mask: var(--sponsor-icon) no-repeat center/80%;
-  }
-}
-@supports (mask: var(--sponsor-icon) no-repeat center/80%) {
-  .sponsor-icon {
-    background-color: var(--red-1);
-    mask: var(--sponsor-icon) no-repeat center/80%;
-  }
-}
-@supports not ((mask: var(--sponsor-icon) no-repeat center/80%) and (-webkit-mask: var(--sponsor-icon) no-repeat center/80%)) {
-  .sponsor-icon {
-    background: var(--sponsor-icon) no-repeat center/80%;
-  }
+.sponsor-icon {
+  background: var(--sponsor-icon) no-repeat center/80%;
 }
 .sponsor-button {
   margin: 8px 48px;
