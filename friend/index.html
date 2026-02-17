@@ -130,8 +130,12 @@
 </div>
 <header id="header" aria-label="Site header">
       <picture>
+              <source media="(max-width: 479px)" srcset="/images/banner-600w.webp">
+              <source media="(max-width: 799px)" srcset="/images/banner-800w.webp">
+              <source media="(min-width: 800px)" srcset="/images/banner.webp">
+          <img crossorigin="anonymous" fetchpriority="high" src="/images/banner.webp" alt="友情链接">
       </picture>
-        <img crossorigin="anonymous" fetchpriority="high" src="/images/banner.webp" alt="友情链接">
+        <img alt="友情链接" style="visibility: hidden;">
   <div id="header-outer">
     <div id="header-title">
           <span id="logo">
