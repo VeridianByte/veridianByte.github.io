@@ -6,7 +6,7 @@
     <description>在世界的边缘你我又会遇见什么 。 。 。</description>
     <language>zh-CN</language>
     <copyright>All rights reserved 2026, 白菜</copyright>
-    <lastBuildDate>Tue, 17 Feb 2026 12:55:26 GMT</lastBuildDate>
+    <lastBuildDate>Tue, 17 Feb 2026 12:59:58 GMT</lastBuildDate>
     <generator>Hexo</generator>
     <image>
       <url>https://veridianbyte.github.io/images/feed-icon.png</url>
@@ -15,8 +15,8 @@
     </image>
     <atom:link href="https://veridianbyte.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     <item>
-      <title>Hello World</title>
-      <link>https://veridianbyte.github.io/9999/09/09/hello-world/</link>
+      <title>《日常》</title>
+      <link>https://veridianbyte.github.io/9999/09/09/diary/</link>
       <description>我们所经历的日常..</description>
       <author>白菜</author>
       <category domain="https://veridianbyte.github.io/categories/%E7%94%9F%E6%B4%BB/">生活</category>
